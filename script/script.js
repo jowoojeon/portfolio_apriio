@@ -10,7 +10,7 @@ $(function(){
 var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
 for (var word in mobileKeyWords){
     if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-        window.location.href = "http://wjwj0916.woobi.co.kr/portfolio_apri/mobile";
+        window.location.href = "/mobile";
         break;
     }
 }
