@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{
+    padding: 0 0;
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #464646;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+}
+.aside{
+    width: 300px;
+    height: 970px;
+    float: left;
+    background-image: url('../images/asideblue.png');
+}
+.logo{
+    width: 300px;
+    height: 150px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.menu{
+    line-height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'IM_Hyemin-Bold';
+}
+.menu li{
+    height: 50px;
+}
+.menu li:hover > a{
+    color: #ffffff;
+}
+.about a {
+    font-size: 20px;
+}
+.about a:hover{
+    font-size: 0;
+}
+.about a:hover:before{
+    content: '소개';
+    font-size: 20px;
+}
+.shop a {
+    font-size: 20px;
+}
+.shop a:hover{
+    font-size: 0;
+}
+.shop a:hover:before{
+    content: '상점';
+    font-size: 20px;
+}
+.board a {
+    font-size: 20px;
+}
+.board a:hover{
+    font-size: 0;
+}
+.board a:hover:before{
+    content: '게시판';
+    font-size: 20px;
+}
+.mypage a {
+    font-size: 20px;
+}
+.mypage a:hover{
+    font-size: 0;
+}
+.mypage a:hover:before{
+    content: '마이페이지';
+    font-size: 20px;
+}
+
+.contents{
+    position: relative;
+    width: 1603px;
+    height: 970px;
+    float: left;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    width: 1603px;
+    height: 2910px;
+}
+.slide li{
+    width: 1603px;
+    height: 970px;
+    float: left;
+
+}
+

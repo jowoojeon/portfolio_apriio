@@ -1,0 +1,239 @@
+@charset "utf-8";
+*{
+    padding: 0 0;
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'ChosunSg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    scroll-behavior:smooth;
+}
+a{
+    text-decoration: none;
+    color: #464646;
+}
+body{
+    width: 100%;
+
+}
+.aside{
+    width: 300px;
+    height: 970px;
+    float: left;
+    background-image: url('../images/asideblue.png');
+    position: fixed;
+}
+.logo{
+    width: 300px;
+    height: 150px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.menu{
+    line-height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.menu li{
+    width: 100px;
+    height: 50px;
+}
+.menu li:hover > a{
+    color: white;
+}
+
+.about a {
+    font-size: 20px;
+}
+.about a:hover{
+    font-size: 0;
+}
+.about a:hover:before{
+    content: '소개';
+    font-size: 20px;
+}
+.shop a {
+    font-size: 20px;
+}
+.shop a:hover{
+    font-size: 0;
+}
+.shop a:hover:before{
+    content: '상점';
+    font-size: 20px;
+}
+.board a {
+    font-size: 20px;
+}
+.board a:hover{
+    font-size: 0;
+}
+.board a:hover:before{
+    content: '게시판';
+    font-size: 20px;
+}
+.mypage a {
+    font-size: 20px;
+}
+.mypage a:hover{
+    font-size: 0;
+}
+.mypage a:hover:before{
+    content: '마이페이지';
+    font-size: 20px;
+}
+
+.contents{
+    position: relative;
+    width: 1603px;
+    height: auto;
+    overflow: hidden;
+    padding-left: 300px;
+}
+.topnav{
+    background-image: url('../images/toptulip2.png');
+    width: 1603px;
+    height: 250px;
+    padding-top: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-color: khaki; */
+}
+.topnav img{
+    display: block;
+    text-align: center;
+}
+/* .topnav p{
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: hotpink; 
+} */
+.topnav ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+}
+.topnav li{
+    float: left;
+    width: 150px;
+    height: 70px;
+    text-align: center;
+}
+
+.case a {
+    font-size: 18px;
+}
+.case a:hover{
+    font-size: 0;
+}
+.case a:hover:before{
+    content: '케이스';
+    font-size: 18px;
+}
+.pouch a {
+    font-size: 18px;
+}
+.pouch a:hover{
+    font-size: 0;
+}
+.pouch a:hover:before{
+    content: '파우치';
+    font-size: 18px;
+}
+.stationary a {
+    font-size: 18px;
+}
+.stationary a:hover{
+    font-size: 0;
+}
+.stationary a:hover:before{
+    content: '문구류';
+    font-size: 18px;
+}
+.living a {
+    font-size: 18px;
+}
+.living a:hover{
+    font-size: 0;
+}
+.living a:hover:before{
+    content: '리빙';
+    font-size: 18px;
+}
+.acc a {
+    font-size: 18px;
+}
+.acc a:hover{
+    font-size: 0;
+}
+.acc a:hover:before{
+    content: '악세사리';
+    font-size: 18px;
+}
+.product{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 49.5px;
+    margin-right: 59.5px;
+}
+.product li{
+    float: left;
+    padding-right: 10px;
+}
+.name1 li{
+    width: 360px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 20px 0 80px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+.name2{
+    float: left;
+}
+.name2 li{
+    width: 360px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 20px 0 80px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+.pagenum{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 1603px;
+    line-height: 35px;
+    padding-bottom: 60px;
+}
+
+.scroll{
+    display:scroll;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    float: right;
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px){
+    /*스타일입력*/
+}
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    /*스타일입력*/
+}

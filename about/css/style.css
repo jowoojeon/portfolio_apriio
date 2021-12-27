@@ -1,0 +1,193 @@
+@charset "utf-8";
+*{
+    padding: 0 0;
+    margin: 0 auto;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'ChosunSg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    scroll-behavior:smooth;
+}
+a{
+    text-decoration: none;
+    color: #464646;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.aside{
+    width: 300px;
+    height: 970px;
+    float: left;
+    background-image: url('../images/asideblue.png');
+    position: fixed;
+}
+.logo{
+    width: 300px;
+    height: 150px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.menu{
+    line-height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.menu li{
+    width: 100px;
+    height: 50px;
+}
+.menu li:hover > a{
+    color: white;
+}
+.about a {
+    font-size: 20px;
+}
+.about a:hover{
+    font-size: 0;
+}
+.about a:hover:before{
+    content: '소개';
+    font-size: 20px;
+}
+.shop a {
+    font-size: 20px;
+}
+.shop a:hover{
+    font-size: 0;
+}
+.shop a:hover:before{
+    content: '상점';
+    font-size: 20px;
+}
+.board a {
+    font-size: 20px;
+}
+.board a:hover{
+    font-size: 0;
+}
+.board a:hover:before{
+    content: '게시판';
+    font-size: 20px;
+}
+.mypage a {
+    font-size: 20px;
+}
+.mypage a:hover{
+    font-size: 0;
+}
+.mypage a:hover:before{
+    content: '마이페이지';
+    font-size: 20px;
+}
+
+.contents{
+    position: relative;
+    width: 1603px;
+    height: auto;
+    float: right;
+    overflow: hidden;
+}
+.topnav{
+    background-image: url('../images/toptulip2.png');
+    width: 1603px;
+    height: 250px;
+    padding-top: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.about{
+    display: block;
+    text-align: center;
+}
+.topnav p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+}
+.aboutapri{
+    padding-top: 100px; 
+    padding-bottom: 50px;
+    width: 603px;
+    height: auto;
+}
+.aboutapri img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    width: 1603px;
+    height: 250px;
+}
+.footer_img{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-left: 60px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.footer_des{
+    float: left;
+    margin-left: 80px;
+    color: #616161;
+    font-size: 0.9em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.footer_des li{
+    float: left;
+    width: 375px;
+}
+.sns{
+    width: 375px;
+    float: right;
+}
+.sns li{
+    float: left;
+    width: 15%;
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.instagram img{
+    width: 100%;
+    height: 100%;
+}
+.talk{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.talk img{
+    width: 100%;
+    height: 100%;
+}
+.youtube{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.youtube img{
+    width: 100%;
+    height: 100%;
+}
+.scroll{
+    display:scroll;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
