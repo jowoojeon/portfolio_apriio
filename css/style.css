@@ -4,6 +4,7 @@
     margin: 0 auto;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'IM_Hyemin-Bold';
 }
 @font-face {
     font-family: 'IM_Hyemin-Bold';
@@ -20,30 +21,55 @@ html, body{
     height: 100%;
 }
 .wrap{
-    width: 100vw;
-    height: 100vh;
+    width:100%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
 }
-.aside{
-    width: 300px;
-    height: 970px;
+.header{
+    width: 230px;
+    height: 100%;
     float: left;
-    background-image: url('../images/asideblue.png');
+    position: fixed;
+    background-color: #7798a5;
+    font-family: 'IM_Hyemin-Bold';
+}
+.headerimg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+.headerimg img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 .logo{
-    width: 300px;
+    width: 230px;
     height: 150px;
-    padding-left: 50px;
-    padding-top: 30px;
+    padding-left: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.nav{
+    width: 230px;
 }
 .menu{
     line-height: 50px;
     font-size: 1.5em;
     text-align: center;
     padding-top: 10px;
-    font-family: 'IM_Hyemin-Bold';
+    position: absolute;
+    top: 100px;
+    left: 60px;
 }
 .menu li{
     height: 50px;
+    width: 100px;
 }
 .menu li:hover > a{
     color: #ffffff;
@@ -88,23 +114,29 @@ html, body{
     content: '마이페이지';
     font-size: 20px;
 }
-
 .contents{
-    position: relative;
-    width: 1603px;
-    height: 970px;
+    position: absolute;
+    width: calc(100% - 230px);
+    height: 100%;
     float: left;
-    overflow: hidden;
+    left: 230px;
+    top: 0;
+    right:0;
 }
 .slide{
     position: absolute;
-    width: 1603px;
-    height: 2910px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right:0;
 }
-.slide li{
-    width: 1603px;
-    height: 970px;
-    float: left;
-
+.slide div{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
 }
-
+.slide div img{
+    width: 100%;
+    height: 100%;
+}

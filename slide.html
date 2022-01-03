@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <style>
+        
+        .your-class{
+            height: 300px;
+            overflow: hidden;
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="your-class">
+        <div><img src="https://picsum.photos/id/1/1200/300" alt="dummy"></div>
+        <div><img src="https://picsum.photos/id/10/1200/300" alt="dummy"></div>
+        <div><img src="https://picsum.photos/id/100/1200/300" alt="dummy"></div>
+        <div><img src="https://picsum.photos/id/11/1200/300" alt="dummy"></div>
+        <div><img src="https://picsum.photos/id/110/1200/300" alt="dummy"></div>
+        <div><img src="https://picsum.photos/id/1200/1200/300" alt="dummy"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+<script>
+    $(document).ready(function(){
+  $('.your-class').slick({
+    slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true
+  });
+});
+</script>
+</body>
+</html>

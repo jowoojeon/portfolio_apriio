@@ -1,12 +1,3 @@
-$(function(){
-    setInterval(function(){
-        $(".slide").animate({top: "-970"},1000,function(){
-            $(".slide li").eq(0).appendTo(".slide");
-            $(".slide").css("top",0)
-        })
-    },4000);
-});
-
 var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
 for (var word in mobileKeyWords){
     if (navigator.userAgent.match(mobileKeyWords[word]) != null){
@@ -15,3 +6,14 @@ for (var word in mobileKeyWords){
     };
 };
 
+$(document).ready(function(){
+    $('.slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        pauseOnHover: false,
+        verticalSwiping: false
+    });
+  });
